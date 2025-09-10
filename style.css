@@ -1,1 +1,194 @@
-/* Add you CSS here */
+body {
+    font-family: 'Courier New', Courier, monospace; 
+    margin: 0;
+    color: #212121; 
+    background: linear-gradient(to right, #fde4c3 50%, #7c8c9a 50%);
+}
+.top-section-banner {
+    background-color: #212121; 
+    padding: 15px 0;
+    border-bottom: 1px solid #424242;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.banner-name {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.8rem;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.banner-nav {
+    display: flex;
+    gap: 15px;
+}
+.nav-button {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #e0e0e0;
+    background-color: transparent; 
+    padding: 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #ffffff;
+}
+.about-container {
+    display: flex;
+    align-items: center; 
+    min-height: calc(100vh - 85px); 
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+.about-me-box {
+    max-width: 650px;
+    background-color: rgba(245, 235, 220, 0.85); 
+    backdrop-filter: blur(2px); 
+    border: 2px solid #212121;
+    border-radius: 15px;
+    padding: 25px 35px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo {
+    float: left; 
+    width: 120px;
+    height: 120px;
+    object-fit: contain; 
+    border-radius: 10px; 
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #5D4037;
+}
+.about-me-box h2 {
+    display: flex; 
+    align-items: center; 
+    font-size: 2rem;
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+.about-me-box h2::after {
+    content: ''; 
+    flex-grow: 1; 
+    height: 2px; 
+    background-color: #212121; 
+    margin-left: 15px; 
+}
+
+.about-me-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.about-me-box p:last-child {
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, #fde4c3 50%, #7c8c9a 50%);
+    }
+
+    .about-container {
+        align-items: flex-start; 
+        padding-top: 30px;
+    }
+    
+    .about-me-box {
+        margin: 0 auto; 
+        width: 85%;
+    }
+}
+.about-container {
+    flex-direction: column; 
+    gap: 30px; 
+}
+.skills-section, 
+.projects-section {
+    width: 100%;
+    max-width: 650px;
+    background-color: rgba(245, 235, 220, 0.85);
+    backdrop-filter: blur(2px);
+    border: 2px solid #212121;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 25px 35px;
+    box-sizing: border-box;
+}
+
+.skills-section h2, 
+.projects-section h2 {
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 1.5rem;
+    color: #212121;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-pill {
+    display: flex;
+    align-items: center;
+    background-color: #F5EBE0; 
+    border: 2px solid #212121; 
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: 600;
+    color: #212121;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.skill-pill i {
+    color: #212121; 
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+.project-item {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 20px; 
+}
+.contact-footer {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-footer h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: #ffffff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+.social-link i {
+    color: #ffffff; 
+    font-size: 2.5rem; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease; 
+}
+.social-link:hover i {
+    transform: scale(1.1);
+}
